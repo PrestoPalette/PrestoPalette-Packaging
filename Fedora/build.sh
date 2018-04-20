@@ -4,7 +4,7 @@ set -e
 set -x
 
 rpmdev-setuptree
-rpmlint PrestoPalette.spec
-spectool -g -R PrestoPalette.spec
-rpmbuild -bs PrestoPalette.spec
-rpmbuild -ba PrestoPalette.spec
+rpmlint prestopalette.spec
+spectool -g -R prestopalette.spec
+rpmbuild -bs prestopalette.spec
+rpmbuild -ba prestopalette.spec

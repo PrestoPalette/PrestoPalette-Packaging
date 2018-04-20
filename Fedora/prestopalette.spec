@@ -30,8 +30,8 @@ qmake-qt5 -config release PrestoPalette.pro && \
 make %{?_smp_mflags} all
 
 %install
-mkdir -p %{buildroot}/%{_bindir} \
-         %{buildroot}/%{_datadir}/applications/
+mkdir -p %{buildroot}/%{_bindir}
+mkdir -p %{buildroot}/%{_datadir}/applications/
 	
 cp -a build/release/PrestoPalette %{buildroot}/%{_bindir}
 

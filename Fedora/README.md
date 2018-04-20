@@ -1,6 +1,15 @@
-## Building rpm for Fedora
+# Building rpm for Fedora
 
-**Note: Items prefixed with \# means run the command as root (or use `sudo`). Items prefixed with $ should be run as your own/build user.**
+## Quick and easy
+
+```
+sudo dnf install fedora-packager gcc make qt5-devel
+./build.sh
+```
+
+## Step-by-Step 
+
+**Note: Lines prefixed with \# mean run the command as root (or use `sudo`). Lines prefixed with $ should be run as your own/build user.**
 
 Steps:
 
@@ -24,5 +33,3 @@ Steps:
 
   * $ `cd ~/rpmbuild/RPMS/x86_64`  (Or i686)
   * \# `dnf install prestopalette......rpm`
-
-_Note: Do not install debuginfo versions_

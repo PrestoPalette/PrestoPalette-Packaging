@@ -4,15 +4,11 @@ Version:	0.1.31
 Release:	1%{dist}
 Summary:	An artist's tool for creating harmonious color palettes
 
-Vendor:		John Cboins and Darryl T. Agostinelli
-Packager:	Darryl T. Agostinelli <dagostinelli@gmail.com>
-
 License:	MIT
 URL:		https://github.com/PrestoPalette/PrestoPalette
 Source0:	%{url}/archive/%{version}/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:	qt5-devel
-BuildRequires:	gcc, make
 BuildRequires:	desktop-file-utils
 
 Requires:	qt5

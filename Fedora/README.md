@@ -5,6 +5,7 @@
 ```
 sudo dnf install fedora-packager gcc make qt5-devel
 ./build.sh
+dnf install ~/rpmbuild/RPMS/prestopalette......rpm
 ```
 
 ## Step-by-Step 
@@ -33,3 +34,11 @@ Steps:
 
   * $ `cd ~/rpmbuild/RPMS/x86_64`  (Or i686)
   * \# `dnf install prestopalette......rpm`
+
+## Test build for official Fedora repository
+
+```
+sudo dnf install fedora-packager gcc make qt5-devel
+./build.sh
+mock ~/rpmbuild/SRPMS/prestopalette-0.1.31-1.fc27.src.rpm
+```

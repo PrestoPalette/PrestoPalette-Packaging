@@ -1,5 +1,7 @@
 # Building rpm for Fedora
 
+<a href="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/"><img src="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/status_image/last_build.png" /></a>
+
 ## Quick and easy
 
 ```

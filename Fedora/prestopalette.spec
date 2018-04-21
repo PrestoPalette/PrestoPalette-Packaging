@@ -14,7 +14,9 @@ BuildRequires:	qt5-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	libappstream-glib
 
-Requires:	qt5
+Requires:	qt5-qtbase
+Requires:	qt5-qtbase-gui
+Requires:	qt5-qtmultimedia
 
 %description
 %{name} is an artist's tool for creating harmonious color palettes.
@@ -38,9 +40,7 @@ EOF
 
 %install
 mkdir -p %{buildroot}/%{_bindir}
-mkdir -p %{buildroot}/%{_datadir}/applications
-mkdir -p %{buildroot}/%{_datadir}/metainfo
-mkdir -p %{buildroot}/%{_datadir}/pixmaps
+mkdir -p %{buildroot}/%{_datadir}/{applications,pixmaps,metainfo}
 install -Dp -m 755 build/release/PrestoPalette %{buildroot}/%{_bindir}
 desktop-file-install --dir=%{buildroot}/%{_datadir}/applications PrestoPalette.desktop
 appstream-util validate-relax --nonet %{SOURCE1}

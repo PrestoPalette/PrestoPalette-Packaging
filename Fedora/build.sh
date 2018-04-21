@@ -11,6 +11,9 @@ rpmbuild -ba prestopalette.spec
 
 # Do these manually
 
+# RUN mock
+# mock ~/rpmbuild/SRPMS/prestopalette-0.1.31-1.fc27.src.rpm
+
 # RUN koji
 # koji build --scratch rawhide `(ls ~/rpmbuild/SRPMS/prestopalette* | sort -n | head -1)`
 # koji list-tasks --mine

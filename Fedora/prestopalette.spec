@@ -16,11 +16,12 @@ BuildRequires:	desktop-file-utils
 %{?fedora:BuildRequires: libappstream-glib}
 
 %{?el7:BuildRequires: qt5-qtbase-devel}
-
-%{?el6:BuildRequires: qt5-qtbase-devel}
-%{?el6:BuildRequires: qt5-qtmultimedia-devel}
-%{?el6:BuildRequires: tar}
-%{?el6:BuildRequires: gcc-c++}
+%{?el7:BuildRequires: qt5-qtmultimedia-devel}
+%{?el7:BuildRequires: tar}
+%{?el7:BuildRequires: gcc-c++}
+%{?el7:BuildRequires: pngcrush}
+%{?el7:BuildRequires: libappstream-glib}
+%{?el7:BuildRequires: desktop-file-utils}
 
 Requires:	qt5-qtbase
 Requires:	qt5-qtbase-gui

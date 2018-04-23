@@ -15,7 +15,6 @@ BuildRequires: libappstream-glib
 BuildRequires: pngcrush
 
 %{?fedora:BuildRequires: qt5-devel}
-%{?fedora:BuildRequires: libappstream-glib}
 
 %{?el7:BuildRequires: qt5-qtbase-devel}
 %{?el7:BuildRequires: qt5-qtmultimedia-devel}

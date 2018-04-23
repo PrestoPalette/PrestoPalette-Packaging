@@ -10,9 +10,17 @@ Source0:	https://github.com/PrestoPalette/PrestoPalette/archive/%{version}/%{ver
 Source1:	https://raw.githubusercontent.com/PrestoPalette/PrestoPalette-Packaging/master/Fedora/PrestoPalette.appdata.xml#/PrestoPalette.appdata.xml
 Source2:	https://raw.githubusercontent.com/PrestoPalette/PrestoPalette-Packaging/master/Fedora/Icon.png#/PrestoPalette.png
 
-BuildRequires:	qt5-devel
 BuildRequires:	desktop-file-utils
-BuildRequires:	libappstream-glib
+
+%{?fedora:BuildRequires: qt5-devel}
+%{?fedora:BuildRequires: libappstream-glib}
+
+%{?el7:BuildRequires: qt5-qtbase-devel}
+
+%{?el6:BuildRequires: qt5-qtbase-devel}
+%{?el6:BuildRequires: qt5-qtmultimedia-devel}
+%{?el6:BuildRequires: tar}
+%{?el6:BuildRequires: gcc-c++}
 
 Requires:	qt5-qtbase
 Requires:	qt5-qtbase-gui

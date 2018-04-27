@@ -59,6 +59,7 @@ install -Dp -m 644 %{SOURCE2} %{buildroot}/%{_datadir}/pixmaps/
 %{_datadir}/applications/PrestoPalette.desktop
 %{_datadir}/metainfo/PrestoPalette.appdata.xml
 %{_datadir}/pixmaps/PrestoPalette.png
+%license LICENSE
 
 %changelog
 * Thu Mar 29 2018 Darryl T. Agostinelli <dagostinelli@gmail.com> 0.1.31-1

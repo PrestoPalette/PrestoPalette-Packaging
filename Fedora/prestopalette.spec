@@ -1,7 +1,7 @@
 
 Name:		prestopalette
 Version:	0.1.31
-Release:	1%{dist}
+Release:	1%{?dist}
 Summary:	An artist's tool for creating harmonious color palettes
 
 License:	MIT
@@ -13,13 +13,13 @@ Source2:	https://raw.githubusercontent.com/PrestoPalette/PrestoPalette-Packaging
 BuildRequires: desktop-file-utils
 BuildRequires: libappstream-glib
 BuildRequires: pngcrush
+BuildRequires: gcc-c++
 
 %{?fedora:BuildRequires: qt5-devel}
 
 %{?el7:BuildRequires: qt5-qtbase-devel}
 %{?el7:BuildRequires: qt5-qtmultimedia-devel}
 %{?el7:BuildRequires: tar}
-%{?el7:BuildRequires: gcc-c++}
 
 Requires:	qt5-qtbase
 Requires:	qt5-qtbase-gui

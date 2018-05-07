@@ -14,8 +14,8 @@ matrix:
   include:
 #    - os: linux
 #      env: LINENV=ubuntu.artful
-    - os: linux
-      env: LINENV=fedora
+#    - os: linux
+#     env: LINENV=fedora
 #    - os: linux
 #      env: LINENV=debian
 #    - os: linux

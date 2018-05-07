@@ -12,7 +12,6 @@ Source2:	https://raw.githubusercontent.com/PrestoPalette/PrestoPalette-Packaging
 
 BuildRequires: desktop-file-utils
 BuildRequires: libappstream-glib
-BuildRequires: pngcrush
 BuildRequires: gcc-c++
 
 %{?fedora:BuildRequires: qt5-devel}

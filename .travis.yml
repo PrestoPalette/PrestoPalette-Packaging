@@ -1,0 +1,22 @@
+language: cpp
+
+install:
+  - docker build -t build_bot_${LINENV} -f scripts/Dockerfile.build.${LINENV} .
+  - docker build -t install_bot_${LINENV} -f scripts/Dockerfile.install.${LINENV} .
+
+script:
+  - docker run build_bot_${LINENV} 
+
+services:
+  - docker
+
+matrix:
+  include:
+#    - os: linux
+#      env: LINENV=ubuntu.artful
+    - os: linux
+      env: LINENV=fedora
+#    - os: linux
+#      env: LINENV=debian
+#    - os: linux
+#      env: LINENV=centos7

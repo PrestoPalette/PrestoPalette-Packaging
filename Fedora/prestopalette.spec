@@ -20,10 +20,6 @@ BuildRequires: gcc-c++
 %{?el7:BuildRequires: qt5-qtmultimedia-devel}
 %{?el7:BuildRequires: tar}
 
-#Requires:	qt5-qtbase
-#Requires:	qt5-qtbase-gui
-#Requires:	qt5-qtmultimedia
-
 %description
 %{name} is an artist's tool for creating harmonious color palettes.
 

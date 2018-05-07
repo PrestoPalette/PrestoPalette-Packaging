@@ -7,7 +7,10 @@ set -x
 rpmdev-setuptree && \
 rpmlint prestopalette.spec && \
 spectool -g -R prestopalette.spec && \
-rpmbuild -bs prestopalette.spec && \
+rpmbuild -bs prestopalette.spec
+
+# Build Locally
+# NOTE: development dependencies must be installed for this to work
 rpmbuild -ba prestopalette.spec
 
 # RUN mock

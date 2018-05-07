@@ -2,45 +2,23 @@
 
 <a href="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/"><img src="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/status_image/last_build.png" /></a>
 
-## Quick and easy
+## Installing from copr PPA into a Centos Docker image
+```
+yum install -y epel-release yum-plugin-copr
+yum copr enable dagostinelli/prestopalette 
+yum install -y prestopalette
+```
+
+Use this for a dry run, but it's not helpful like the COPR builds are for testing
+
+`docker run -v ~/rpmbuild/RPMS:/rpms:z -t -i centos:7 /bin/bash`
+
+## Build with locally installed Fedora and mock (see build.sh script for details)
+
+Other things to install for building locally are mentioned in the spec file
 
 ```
 sudo dnf install fedora-packager gcc make qt5-devel
 ./build.sh
-dnf install ~/rpmbuild/RPMS/prestopalette......rpm
-```
-
-## Step-by-Step 
-
-**Note: Lines prefixed with \# mean run the command as root (or use `sudo`). Lines prefixed with $ should be run as your own/build user.**
-
-Steps:
-
-1. Install build dependencies
-
-  * \# `dnf install fedora-packager gcc make qt5-devel`
-
-2. Create rpm build tree
-
-  * $ `rpmdev-setuptree`
-
-3. Download source
-
-  * $ `spectool -g -R PrestoPalette.spec`
-
-4. Build RPM
-
-  * $ `rpmbuild -ba PrestoPalette.spec`
-
-5. Install RPM
-
-  * $ `cd ~/rpmbuild/RPMS/x86_64`  (Or i686)
-  * \# `dnf install prestopalette......rpm`
-
-## Test build for official Fedora repository
-
-```
-sudo dnf install fedora-packager gcc make qt5-devel
-./build.sh
-mock ~/rpmbuild/SRPMS/prestopalette-0.1.31-1.fc27.src.rpm
+find . ~/rpmbuild/RPMS | grep prestopalette | sort
 ```

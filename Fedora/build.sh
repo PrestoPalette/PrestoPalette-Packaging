@@ -7,7 +7,8 @@ set -x
 rpmdev-setuptree && \
 rpmlint prestopalette.spec && \
 spectool -g -R prestopalette.spec && \
-rpmbuild -bs prestopalette.spec
+rpmbuild -bs prestopalette.spec && \
+rpmbuild -ba prestopalette.spec
 
 # RUN mock
 mock -r fedora-26-x86_64 --resultdir ~/rpmbuild/RPMS/x86_64 ~/rpmbuild/SRPMS/prestopalette-0.1.31-1.fc27.src.rpm

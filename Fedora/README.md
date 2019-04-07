@@ -17,6 +17,8 @@ yum install prestopalette
 ```
 
 ## Installing from copr PPA into a Centos Docker image
+This is here for historical purposes.  The copr repository still exists, but you shouldn't use it.  You should use the official repositories.
+
 ```
 yum install -y epel-release yum-plugin-copr
 yum copr enable dagostinelli/prestopalette 

@@ -17,9 +17,7 @@ yum install prestopalette
 ```
 
 ## Installing from unofficial copr PPA into a Centos Docker image
-This is here for historical purposes.  The copr repository still exists, but you should try to use the official repositories mentioned above.
-
-Fedora copr is an [un-official PPA available here](https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/)  It is still automatically maintained.  It pulls the source code from github and automatically rebuilds.
+The Fedora copr build is an [un-official PPA](https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/)  The PPA is still maintained because it is useful as a build server.  Whenever code is checked into PrestoPalette's github repo, the build pulls the source and rebuilds it automatically and let's us know when something is wrong.  (The automatation is not yet 100%.  It sometimes does need to be manually triggered)
 
 ```
 yum install -y epel-release yum-plugin-copr

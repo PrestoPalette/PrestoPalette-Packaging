@@ -1,4 +1,4 @@
-# Building rpm for Fedora
+# Building rpm for Fedora and CentOS
 
 <a href="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/"><img src="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/status_image/last_build.png" /></a>
 
@@ -6,6 +6,14 @@
 
 ```
 dnf install prestopalette
+
+```
+
+## PrestoPalette is available from the official EPEL package repository for CentOS 7+
+
+```
+yum install prestopalette
+
 ```
 
 ## Installing from copr PPA into a Centos Docker image

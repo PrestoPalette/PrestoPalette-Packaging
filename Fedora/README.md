@@ -2,6 +2,12 @@
 
 <a href="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/"><img src="https://copr.fedorainfracloud.org/coprs/dagostinelli/prestopalette/package/prestopalette/status_image/last_build.png" /></a>
 
+## PrestoPalette is available from the official Fedora package repository
+
+```
+dnf install prestopalette
+```
+
 ## Installing from copr PPA into a Centos Docker image
 ```
 yum install -y epel-release yum-plugin-copr
